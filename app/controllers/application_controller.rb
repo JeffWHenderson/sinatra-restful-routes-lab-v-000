@@ -21,6 +21,6 @@ class ApplicationController < Sinatra::Base
   end
 
   get 'recipes/:id' do
-    Recipe.find(:id => params[:id])
+    Recipe.find_by_id(params[:id])
   end
 end
