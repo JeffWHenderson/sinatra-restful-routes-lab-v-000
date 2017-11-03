@@ -9,7 +9,8 @@ class ApplicationController < Sinatra::Base
   end
 
   post '/recipes' do
-    recipes = Recipe.all
-    recipes
+    # recipes = Recipe.all
+    # recipes
+    params
   end
 end
