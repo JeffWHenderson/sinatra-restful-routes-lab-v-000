@@ -9,12 +9,12 @@ class ApplicationController < Sinatra::Base
   end
 
   get '/recipes' do
-    
+
   end
   
   post '/recipes' do
     @recipes = Recipe.all
-    
+
     #params[:cook_time]
   end
 end
