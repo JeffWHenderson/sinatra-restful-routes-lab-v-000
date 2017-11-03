@@ -9,12 +9,8 @@ class ApplicationController < Sinatra::Base
   end
 
   post '/recipes' do
-    # recipes = Recipe.all
-    # recipes
-    params[:cook_time]
+    @recipes = Recipe.all
+    
+    #params[:cook_time]
   end
-  edit
-  index
-  new
-  show
 end
