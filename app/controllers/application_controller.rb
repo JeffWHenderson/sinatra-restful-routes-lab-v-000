@@ -32,7 +32,9 @@ class ApplicationController < Sinatra::Base
     #this is where the logic happens
   end
 
-  get 'recipes/:id/delete' do
-
+  delete '/recipes/:id/delete' do #delete action
+    @recipes = Post.find_by_id(params[:id])
+    @recipes.delete
+    redirect to '/recipes'
   end
 end
