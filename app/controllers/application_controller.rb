@@ -19,10 +19,9 @@ class ApplicationController < Sinatra::Base
     erb :index
     #params[:cook_time]
   end
+  
   post '/recipes' do
     new_recipe = Recipe.create(params)
-    #new_recipe.save
-    @recipes = Recipe.all
     erb :index
     #params[:cook_time]
   end
