@@ -19,4 +19,8 @@ class ApplicationController < Sinatra::Base
     erb :show
     #params[:cook_time]
   end
+
+  get 'recipes/:id/show' do
+    Recipe.find(:id => params[:id])
+  end
 end
