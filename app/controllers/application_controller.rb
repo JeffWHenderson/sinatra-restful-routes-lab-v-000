@@ -11,6 +11,6 @@ class ApplicationController < Sinatra::Base
   post '/recipes' do
     # recipes = Recipe.all
     # recipes
-    params
+    params[:ingredients]
   end
 end
