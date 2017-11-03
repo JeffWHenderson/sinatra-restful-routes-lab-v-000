@@ -14,7 +14,7 @@ class ApplicationController < Sinatra::Base
 
   post '/recipes' do
     @recipes = Recipe.all
-
+    erb :show
     #params[:cook_time]
   end
 end
