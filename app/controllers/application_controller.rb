@@ -16,7 +16,7 @@ class ApplicationController < Sinatra::Base
     new_recipe = Recipe.create(params)
     #new_recipe.save
     @recipes = Recipe.all
-    erb :show
+    erb :index
     #params[:cook_time]
   end
 
