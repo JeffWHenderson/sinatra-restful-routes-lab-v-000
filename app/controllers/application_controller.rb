@@ -20,7 +20,7 @@ class ApplicationController < Sinatra::Base
     #params[:cook_time]
   end
 
-  get 'recipes/:id/show' do
+  get 'recipes/:id' do
     Recipe.find(:id => params[:id])
   end
 end
