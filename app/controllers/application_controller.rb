@@ -13,6 +13,8 @@ class ApplicationController < Sinatra::Base
   end
 
   post '/recipes' do
+    new_recipe = Recipe.create(params)
+    new_recipe.save
     @recipes = Recipe.all
     erb :show
     #params[:cook_time]
