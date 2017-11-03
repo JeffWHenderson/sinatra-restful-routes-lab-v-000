@@ -5,6 +5,12 @@
     <title></title>
   </head>
   <body>
+    <h1>RECIPES</h1>
+    <% @recipes.each do |r| %>
+    <%= r.name %>
+    <% end %>
+    
+    <h1>enter your recipe here!</h1>
     <form class="" action="/recipes" method="post">
       <p><input type="text" name="name" placeholder="name"></p>
       <p><input type="text" name="ingredients" placeholder="ingredients"></p>
