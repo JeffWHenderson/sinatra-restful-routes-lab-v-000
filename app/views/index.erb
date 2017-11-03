@@ -6,7 +6,7 @@
   </head>
   <body>
     <h1>RECIPES</h1>
-    <% Recipes.all.each do |r| %>
+    <% Recipe.all.each do |r| %>
     <p><%= r.name %></p>
     <p><%= r.ingredients %></p>
     <p><%= r.cook_time %></p>
