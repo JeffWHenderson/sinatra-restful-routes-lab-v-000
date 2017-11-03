@@ -13,4 +13,8 @@ class ApplicationController < Sinatra::Base
     # recipes
     params[:cook_time]
   end
+
+  index 
+  new
+  show
 end
